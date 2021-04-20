@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="ISO-8859-1">
+    {{>headerlinks}}
+ <style>
+     
+
+     button{
+    border: none ;
+    padding: 0.8rem 1.8rem;
+    font-size: 1.8rem;
+    border-radius: 2rem;
+    text-transform: uppercase;
+    box-shadow: 0 8px 6px -6px #000;
+    outline: none;
+    height: 10;
+    width: "50px";
+}
+button:hover{
+    box-shadow: 0 8px 6px -6px var(--main-color);
+}
+ </style>
+
+</head>
+<body>
+    {{>patnavbar}}
+<br>
+<br>
+ <b><i><h1><center><font color="black">Update Patient Info</font></center></h1></i></b>
+ <br>
+ <br>
+<div class="container center" >
+        <form action="/UpdateValues" method="post">
+
+            <div class="row">
+                <div class="col-sm-6">
+                    <center><h5 class="card-title">Name</h5></center>
+                    
+                    <center><input type="text" name="patname" value={{patname}} required="required"></center>
+                </div>
+                <div class="col-sm-6">
+                    <center><h5 class="card-title">Address</h5></center>
+                    <center><input type="text" name="pataddress" value={{pataddress}} required="required"></center>
+                </div>
+            </div>
+
+            <br>
+            <br>
+            <br>
+
+            <div class="row">
+                <div class="col-sm-6">
+                    <center><h5 class="card-title">Contact</h5></center>
+                     <center><input type="text" name="patcontact" value= {{patcontact}} required="required"></center>
+                </div>
+
+                 <div class="col-sm-6">
+                    <center><h5 class="card-title">Password</h5></center>
+                    <center> <input type="text" name="patpassword" value={{patpassword}} required="required"></center>
+                </div>
+            </div>
+
+
+
+            <br>
+            <br>
+            <br>
+            <!-- Submit -->
+            
+            <center><button type="submit" value="Update" style="width:150px">Update</button></center>
+        </form>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{{>footer}}
+
+
+
+</body>
+</html>

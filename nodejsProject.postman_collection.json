@@ -1,0 +1,55 @@
+{
+	"info": {
+		"_postman_id": "7c2fffd5-b50b-4c38-8632-97c952a8b8de",
+		"name": "nodejsProject",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "fetchPatients",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/patients?DoctID=anj@123",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"patients"
+					],
+					"query": [
+						{
+							"key": "DoctID",
+							"value": "anj@123"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "fetchDoctorsWithCountOfPatients",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/fetchDoctors",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"fetchDoctors"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

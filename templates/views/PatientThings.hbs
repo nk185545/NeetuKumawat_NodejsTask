@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="ISO-8859-1">
+    {{>headerlinks}}
+ <style>
+     
+    
+    
+     body {
+  
+  
+  text-align: center;
+ background: url(images/train.webp) right bottom no-repeat;
+  background-size: 300px, 260px, auto;
+     }
+
+     button{
+    border: none ;
+    padding: 0.4rem 0.8rem;
+    font-size: 1.2rem;
+    border-radius: 1rem;
+    text-transform: uppercase;
+    box-shadow: 0 8px 6px -6px #000;
+    outline: none;
+    height: 10;
+    
+}
+button:hover{
+    box-shadow: 0 8px 6px -6px var(--main-color);
+}
+
+     table, td, th {  
+     border: 1px solid #ddd;
+     text-align: left;
+   }
+   
+   table {
+     border-collapse: collapse;
+     width: 50%;
+    
+   }
+   .train-data{
+       position: relative;
+     left:50px;
+     top:50px;
+    
+   }
+   th, td {
+     padding: 15px;
+     font-size: 12px;
+   }
+
+ </style>
+
+</head>
+<body  >
+    {{>patnavbar}}
+
+ <!--====form section start====-->
+ <center>
+    <div class="train-data" >
+    <table border="1" >
+        <tr>
+            <th>Doctor Name</th>
+            <th>Hospital</th>
+            <th>Experience</th>
+            <th>Contact</th>
+            <th>Book Appointment</th>
+        </tr>
+        
+       
+           
+       {{#each doctData }}
+        <tr>
+            
+            <td>{{firstname}}</td>
+            <td>{{hospital}}</td>
+            <td>{{experience}}</td>
+            <td>{{contact}}</td>
+            <form action="BookAppointment" method="POST">
+            <td> <button type="submit" name="bookAppoint" value={{username}} style="width:100px;">Book</button></td>
+            </form>
+        </tr>
+       {{/each}}
+        
+    </table>
+    </div>
+</center>
+
+
+
+
+
+
+
+
+
+
+{{>footer}}
+
+
+
+</body>
+</html>

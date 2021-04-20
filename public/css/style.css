@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Piazzolla:ital,wght@0,300;0,400;0,900;1,200&display=swap');
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Piazzolla', serif;
+}
+
+:root{
+   /* --main-bg:#1e272e ;*/
+    --main-color: #0097e6 ;
+}
+html{
+    font-size: 62.5% ;
+}
+body{
+    height:100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.carousel-inner img{
+    height: 500px;
+}
+
+.row{
+    margin:0 ;
+}
+
+.main_menu{
+    background-color: var(--main-bg);
+}
+
+
+
+
+.navbar li{
+    margin-left: 2rem 0;
+}
+
+.navbar a{
+    
+    font-size: 1.8rem;
+}
+
+.navbar a:hover{
+    background-color: grey;
+}
+
+.navbar-toggler{
+    background-color: grey;
+}
+
+
+/* main header */
+
+.main-header-left{
+    height: 70rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.main-header-left p{
+    font-size: 2rem;
+}
+
+.main-header-left h1{
+    font-size: 4rem;
+    margin:1rem 0 4rem 0;
+    text-transform: capitalize;
+}
+.main-header-left .text_clr{
+    color:var(--main-color)
+}
+
+.main-header-left button{
+    border: none ;
+    padding: 0.8rem 1.8rem;
+    font-size: 1.4rem;
+    border-radius: 2rem;
+    text-transform: uppercase;
+    box-shadow: 0 8px 6px -6px #000;
+    outline: none;
+}
+
+.main-header-left button:hover{
+    box-shadow: 0 8px 6px -6px var(--main-color);
+}
+
+.main-header-right{
+    height: 70rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.main-header-right figure img{
+    filter: drop-shadow(0 0.5rem 1rem rgba(0,0,0,0.3))
+}
+.w-100{
+    height:30rem;
+}
+
+/*weather page style*/
+
+
+
+/* error page style */
+.errimg img{ 
+    width: 60rem ;
+    height: 30rem;
+}
+/*  adminUser.hbs style   */
+
+
+/* footer code */
+footer{
+    width: 100%;
+    background-color:gray;
+    margin-top: auto;
+    position: relative;
+  left: 0;
+  top:10vh;
+}
+
+footer p{
+    margin: 0;
+    text-align: center;
+    color:black;
+    line-height: 5rem;
+    font-size: 1.4rem;
+    
+}
+
+
+/* responsive code */
+
+@media(max-width:768px){
+    .main-header-left{
+        height:auto ;
+        margin: 5rem 0;
+    }
+    .main-header-right{
+        height: auto ;
+        margin-top: 3rem;
+    }
+    
+}
+
+
+
+
+

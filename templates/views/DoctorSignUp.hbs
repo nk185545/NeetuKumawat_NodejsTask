@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="ISO-8859-1">
+    {{>headerlinks}}
+    <style type="text/css">
+    
+        #heading3
+        {
+            background-color:white;
+            margin:20px;
+            padding:10px;
+            border-radius:10px;
+            margin:100px 50px 50px 600px;
+        }
+        input
+        {
+            margin:5px;
+            background-color:white;
+        }
+        #selectedFiles img {
+            max-width: 125px;
+            max-height: 125px;
+            float: left;
+            margin-bottom:10px;
+	    }
+    </style>
+</head>
+<body>
+    {{>navbar}}
+<br><br><br><br>
+<div style="width:1000px;">
+  <div style="width:650px; float:left;">
+        <img class="d-block w-100" src="images/doct4.jpg" alt="Second slide">
+  </div>
+  <div style="width:350px; float:right;">
+      <center>
+        <div >
+            <font size="6" color="red"> <i><b> Registration form </b></i></font> <br><br>
+            <form action="SaveDoctorsInfo" method='POST'  enctype="multipart/form-data">
+                <b><i>First Name  &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</i></b><input type="text" name="firstname" maxlength="20" required="required" /><br>
+                <b><i>Lastname &nbsp;&nbsp;&emsp;&nbsp; &nbsp;</i></b><input type="text" name="lastname" maxlength="20" required="required" /><br>
+                <b><i>UserName   &nbsp; &nbsp;&nbsp;&emsp;</i></b><input type="text" name="username" required="required" /><br>
+                <b><i>Password&nbsp;&emsp;&nbsp;&emsp;</i></b><input type="password" name="password" required="required" /><br>
+                <b><i>Hospital Name &nbsp;</i></b><input type="text" name="hospital" required="required" /><br>
+                <b><i>Experience&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;</i></b><input type="text" name="experience" required="required" /><br>           
+                <b><i>Contact No.&emsp;&nbsp;</i></b><input type="text" name="contact" required="required" /><br> 
+                <b><i>Pincode&emsp;&emsp;&emsp;</i></b><input type="text" name="pincode" /><br> 
+                <b><i>State&emsp;&emsp;&emsp;&emsp;</i></b><input type="text" name="state" /><br>   
+                <br>
+                <p><input type="file"  accept="image/*" name="image" id="image"  onchange="loadFile(event)" style="display: none;"></p>
+                <p><label for="image" style="cursor: pointer;">Upload Image</label></p>
+                <p><img id="output" width="200" /></p>
+
+                <input type="submit" value="register">     
+                <input type="reset" value="clear">
+            </form>
+
+        </div>
+    </center>
+  </div>
+</div>
+
+{{>footer}}
+
+<script>
+                var loadFile = function(event) {
+                    var image = document.getElementById('output');
+                    image.src = URL.createObjectURL(event.target.files[0]);
+                };
+                </script>  
+</body>
+</html>
