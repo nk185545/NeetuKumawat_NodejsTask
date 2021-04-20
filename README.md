@@ -50,6 +50,13 @@
            b) PatientInfo.json  : contains patients information  (file may be not looks good because we have also stored the images in binary format(Blob in Sqlite3)) (16 records)
             
             c) AppointmentInfo.json  : contains Appointment information(doctorid, patientid)  **(115 records)**
+            
+            
+            
+            
+            
+  ==> collection of API : **nodejsProject.postman_collection.json**  file which is in github repository(import this in POSTMAN for run)
+
      
      
     
