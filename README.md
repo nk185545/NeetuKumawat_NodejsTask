@@ -67,6 +67,27 @@
         
  ![1](https://user-images.githubusercontent.com/80478598/115450069-17bc8b00-a239-11eb-824c-e937a04002d4.png)
 
+ 2) login Page :
+ ![2](https://user-images.githubusercontent.com/80478598/115450651-d24c8d80-a239-11eb-9b9b-700d6962024b.png)
+ 
+ 3) Doctor Registration Page :
+![3](https://user-images.githubusercontent.com/80478598/115450663-d4aee780-a239-11eb-9fa2-30e42801f9bd.png)
+
+
+4)Patient Registration page:
+![4](https://user-images.githubusercontent.com/80478598/115450668-d5e01480-a239-11eb-9c9a-23c024450247.png)
+
+5)Book Appointment Page :
+![5](https://user-images.githubusercontent.com/80478598/115450671-d7114180-a239-11eb-86cf-149bd39ad249.png)
+
+6)Update Patient Info page :
+![6](https://user-images.githubusercontent.com/80478598/115450673-d7a9d800-a239-11eb-81fd-d3c36e889f5e.png)
+
+
+
+
+
+=> Project run on Node server. All data is fetched from the database.
 
      
      
