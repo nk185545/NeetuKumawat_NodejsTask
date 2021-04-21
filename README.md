@@ -45,6 +45,7 @@
      
      
 ==>>  Dumped_database has three json documents which consists all three tables used in database in the project.
+           
            a) DoctorsInfo.json  : contains doctors information  (file may be not looks good because we have also stored the images in binary format(Blob in Sqlite3))  (10 records)
             
            b) PatientInfo.json  : contains patients information  (file may be not looks good because we have also stored the images in binary format(Blob in Sqlite3)) (16 records)
